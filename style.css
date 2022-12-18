@@ -1,0 +1,67 @@
+
+
+:root {
+    --bg-color: rgb(250, 250, 250);
+    --header-color: rgba(31, 158, 190, 0.499);
+    --link-color: rgb(255, 255, 255);
+    --link-color-hover: rgb(94, 13, 128);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+}
+
+.content {
+    height: 200vh;
+    display: grid;
+    place-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+header {
+    background-color: var(--header-color);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--header-color);
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: var(--link-color-hover);
+}
